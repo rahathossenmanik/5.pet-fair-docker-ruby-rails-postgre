@@ -26,10 +26,11 @@ default: &default
 #   database: pet_fair_ruby_rails_postgre_crud_development
 development:
   <<: *default
-  host: 127.0.0.1
-  database: petfair
-  username: postgres
-  password: admin
+  url: <%= ENV["DATABASE_URL"] %>
+  # host: 127.0.0.1
+  # database: petfair
+  # username: postgres
+  # password: admin
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
