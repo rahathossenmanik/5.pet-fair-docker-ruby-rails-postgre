@@ -10,6 +10,8 @@ module PetFairRubyRailsPostgreCrud
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    Rails.application.config.hosts << "jh77qy-6543.fc-eu-0.pitcher.csb.app"
+    Rails.application.config.hosts << "jh77qy-6543.csb.app"
 
     # Configuration for the application, engines, and railties goes here.
     #
