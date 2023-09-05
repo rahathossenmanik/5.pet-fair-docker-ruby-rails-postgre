@@ -26,7 +26,7 @@ default: &default
 #   database: pet_fair_ruby_rails_postgre_crud_development
 development:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
+  url: ENV["DATABASE_URL"]
   # host: 127.0.0.1
   # database: petfair
   # username: postgres
@@ -68,7 +68,7 @@ development:
 
 test:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
+  url: ENV["DATABASE_URL"]
   # host: 127.0.0.1
   # database: petfair
   # username: postgres
@@ -96,7 +96,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
+  url: ENV["DATABASE_URL"]
   # database: pet_fair_ruby_rails_postgre_crud_production
   # username: pet_fair_ruby_rails_postgre_crud
   # password: <%= ENV["PET_FAIR_RUBY_RAILS_POSTGRE_CRUD_DATABASE_PASSWORD"] %>
