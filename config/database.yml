@@ -26,11 +26,10 @@ default: &default
 #   database: pet_fair_ruby_rails_postgre_crud_development
 development:
   <<: *default
-  url: ENV["DATABASE_URL"]
-  # host: 127.0.0.1
-  # database: petfair
-  # username: postgres
-  # password: admin
+  host: berry.db.elephantsql.com
+  database: qfllqvty
+  username: qfllqvty
+  password: uyUaS-1tpAbvD99c_RtyQuWr4Gsb--Ep
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -68,11 +67,10 @@ development:
 
 test:
   <<: *default
-  url: ENV["DATABASE_URL"]
-  # host: 127.0.0.1
-  # database: petfair
-  # username: postgres
-  # password: admin
+  host: berry.db.elephantsql.com
+  database: qfllqvty
+  username: qfllqvty
+  password: uyUaS-1tpAbvD99c_RtyQuWr4Gsb--Ep
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -96,7 +94,6 @@ test:
 #
 production:
   <<: *default
-  url: ENV["DATABASE_URL"]
-  # database: pet_fair_ruby_rails_postgre_crud_production
-  # username: pet_fair_ruby_rails_postgre_crud
-  # password: <%= ENV["PET_FAIR_RUBY_RAILS_POSTGRE_CRUD_DATABASE_PASSWORD"] %>
+  database: pet_fair_ruby_rails_postgre_crud_production
+  username: pet_fair_ruby_rails_postgre_crud
+  password: <%= ENV["PET_FAIR_RUBY_RAILS_POSTGRE_CRUD_DATABASE_PASSWORD"] %>
