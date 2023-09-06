@@ -15,9 +15,9 @@ class PetTypeController < ApplicationController
   end
 
   def update
-    petType = PetType.find(params[:id])
-    petType.update!(petType_params)
-    redirect_to petType
+    @petType = PetType.find(params[:id])
+    @petType.update!(petType_params)
+    render json: @petType, status: :ok
   end
 
   def destroy

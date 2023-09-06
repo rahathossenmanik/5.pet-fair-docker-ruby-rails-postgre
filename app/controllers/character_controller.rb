@@ -15,9 +15,9 @@ class CharacterController < ApplicationController
   end
 
   def update
-    character = Character.find(params[:id])
-    character.update!(character_params)
-    redirect_to character
+    @character = Character.find(params[:id])
+    @character.update!(character_params)
+    render json: @character, status: :ok
   end
 
   def destroy

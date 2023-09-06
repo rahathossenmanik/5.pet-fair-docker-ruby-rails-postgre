@@ -15,9 +15,9 @@ class PetController < ApplicationController
   end
 
   def update
-    pet = Pet.find(params[:id])
-    pet.update!(pet_params)
-    redirect_to pet
+    @pet = Pet.find(params[:id])
+    @pet.update!(pet_params)
+    render json: @pet, status: :ok
   end
 
   def destroy
