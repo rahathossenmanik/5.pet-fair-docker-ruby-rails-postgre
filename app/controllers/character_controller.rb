@@ -11,21 +11,7 @@ class CharacterController < ApplicationController
 
   def create
     @character = Character.create!(character_params)
-    # if @character.save
-    #   render json: {status: "SUCCESS", message: "Character was created successfully!", data: @character}, status: :created
-    # else
-    #   render json: @character.errors, status: :unprocessable_entity
-    # end
-    # puts character_params
-    # puts @character
-    render json: @character, status: :created
-    # friend = Friend.new(friend_params)
-
-    # if friend.save
-    #   render json: {status: "SUCCESS", message: "Friend was created successfully!", data: friend}, status: :created
-    # else
-    #   render json: friend.errors, status: :unprocessable_entity
-    # end
+    render json: @character, status: :ok
   end
 
   def update
@@ -42,6 +28,6 @@ class CharacterController < ApplicationController
 
   private
     def character_params
-      params.require(:label)
+      params.require(:character).permit(:label)
     end
 end

@@ -10,8 +10,8 @@ class PetTypeController < ApplicationController
   end
 
   def create
-    petType = PetType.create!(petType_params)
-    redirect_to petType
+    @petType = PetType.create!(petType_params)
+    render json: @petType, status: :ok
   end
 
   def update
@@ -28,6 +28,6 @@ class PetTypeController < ApplicationController
 
   private
     def petType_params
-      params.require(:label)
+      params.require(:pet_type).permit(:label)
     end
 end

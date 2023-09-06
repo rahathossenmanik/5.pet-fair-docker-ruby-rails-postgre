@@ -10,8 +10,8 @@ class PetController < ApplicationController
   end
 
   def create
-    pet = Pet.create!(pet_params)
-    redirect_to pet
+    @pet = Pet.create!(pet_params)
+    render json: @pet, status: :ok
   end
 
   def update
@@ -54,6 +54,6 @@ class PetController < ApplicationController
 
   private
     def pet_params
-      params.require(:name, :age, :petType, :character, :about, :favorite, :image, :loveCount)
+      params.require(:pet).permit(:name, :age, :petTypeId, :characterId, :about, :favorite, :image, :loveCount)
     end
 end
