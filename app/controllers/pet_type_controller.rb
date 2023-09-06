@@ -28,6 +28,6 @@ class PetTypeController < ApplicationController
 
   private
     def petType_params
-      params.require(:petType).permit(:title, :content)
+      params.require(:label)
     end
 end
