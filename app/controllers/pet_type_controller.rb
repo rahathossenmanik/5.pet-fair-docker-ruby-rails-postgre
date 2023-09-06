@@ -21,9 +21,9 @@ class PetTypeController < ApplicationController
   end
 
   def destroy
-    petType = PetType.find(params[:id])
-    petType.destroy!
-    redirect_to petTypes_path
+    @petType = PetType.find(params[:id])
+    @petType.destroy!
+    render json: @petType, status: :ok
   end
 
   private

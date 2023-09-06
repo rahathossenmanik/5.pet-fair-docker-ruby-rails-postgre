@@ -21,9 +21,9 @@ class PetController < ApplicationController
   end
 
   def destroy
-    pet = Pet.find(params[:id])
-    pet.destroy!
-    redirect_to pets_path
+    @pet = Pet.find(params[:id])
+    @pet.destroy!
+    render json: @pet, status: :ok
   end
 
   def getDogs

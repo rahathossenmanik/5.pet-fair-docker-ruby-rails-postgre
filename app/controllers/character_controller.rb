@@ -21,9 +21,9 @@ class CharacterController < ApplicationController
   end
 
   def destroy
-    character = Character.find(params[:id])
-    character.destroy!
-    redirect_to characters_path
+    @character = Character.find(params[:id])
+    @character.destroy!
+    render json: @character, status: :ok
   end
 
   private
