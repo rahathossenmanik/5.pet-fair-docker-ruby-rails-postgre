@@ -47,9 +47,9 @@ class PetController < ApplicationController
   end
 
   def loveReact
-    pet = Pet.find(params[:id])
-    pet.update!({:loveReact => pet.loveReact + 1})
-    redirect_to pet
+    @pet = Pet.find(params[:id])
+    @pet.update!({:loveCount => @pet.loveCount + 1})
+    render json: @pet, status: :ok
   end
 
   private
