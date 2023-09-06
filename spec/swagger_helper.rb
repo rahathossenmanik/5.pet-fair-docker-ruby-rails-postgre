@@ -31,7 +31,7 @@ RSpec.configure do |config|
   petTypeResponseBody = {
     type: 'object',
     properties: {
-      _id: {
+      id: {
         type: 'string',
         description: 'Pet Type Id'
       },
@@ -46,10 +46,6 @@ RSpec.configure do |config|
       updateDate: {
         type: 'string',
         description: 'Updated Date'
-      },
-      __v: {
-        type: 'number',
-        description: 'Version'
       }
     }
   };
@@ -70,7 +66,7 @@ RSpec.configure do |config|
   characterResponseBody = {
     type: 'object',
     properties: {
-      _id: {
+      id: {
         type: 'string',
         description: 'Character Id'
       },
@@ -85,10 +81,6 @@ RSpec.configure do |config|
       updateDate: {
         type: 'string',
         description: 'Updated Date'
-      },
-      __v: {
-        type: 'number',
-        description: 'Version'
       }
     }
   };
@@ -104,12 +96,12 @@ RSpec.configure do |config|
         type: 'number',
         description: 'Pet Age'
       },
-      petType: {
-        type: 'string',
+      petTypeId: {
+        type: 'number',
         description: 'Pet Type Id'
       },
-      character: {
-        type: 'string',
+      characterId: {
+        type: 'number',
         description: 'Character Id'
       },
       about: {
@@ -133,8 +125,8 @@ RSpec.configure do |config|
     example: {
       name: 'Tommy',
       age: 2,
-      petType: '0',
-      character: '0',
+      petTypeId: 0,
+      characterId: 0,
       about: 'Tommy is a cute dog',
       favorite: 'Tommy loves to play with kids',
       image: 'https://images.dog.ceo/breeds/terrier-norwich/n02094258_1003.jpg',
@@ -144,7 +136,7 @@ RSpec.configure do |config|
   petResponseBody = {
     type: 'object',
     properties: {
-      _id: {
+      id: {
         type: 'string',
         description: 'Pet Id'
       },
@@ -156,12 +148,12 @@ RSpec.configure do |config|
         type: 'number',
         description: 'Pet Age'
       },
-      petType: {
-        type: 'string',
+      petTypeId: {
+        type: 'number',
         description: 'Pet Type Id'
       },
-      character: {
-        type: 'string',
+      characterId: {
+        type: 'number',
         description: 'Character Id'
       },
       about: {
@@ -187,10 +179,6 @@ RSpec.configure do |config|
       updateDate: {
         type: 'string',
         description: 'Updated Date'
-      },
-      __v: {
-        type: 'number',
-        description: 'Version'
       }
     }
   };
