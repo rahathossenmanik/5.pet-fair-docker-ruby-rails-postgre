@@ -1,31 +1,25 @@
-# README
+## Related Projects (Pet Fair)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## [Pet Fair - MERN-MVC-CRUD-Frontend](https://github.com/rahathossenmanik/1.pet-fair-mern-mvc-crud-frontend)
 
-Things you may want to cover:
+[Live](https://zzkvcp-3000.csb.app)
 
-- Ruby version
+## [Pet Fair - MERN-MVC-CRUD-Backend](https://github.com/rahathossenmanik/2.pet-fair-mern-mvc-crud-backend)
 
-- System dependencies
+[Live](https://w58tnx-6543.csb.app/api)
 
-- Configuration
+## [Pet Fair - NEST-CRUD-Backend](https://github.com/rahathossenmanik/3.pet-fair-nest-mongo-crud)
 
-- Database creation
+[Live](https://d65x2w-6543.csb.app/api)
 
-- Database initialization
+## [Pet Fair - NEST-TypeORM-Postgre](https://github.com/rahathossenmanik/4.pet-fair-nest-typeorm-postgre)
 
-- How to run the test suite
+[Live](https://5zzxwr-3000.csb.app/api)
 
-- Services (job queues, cache servers, search engines, etc.)
+## [Pet Fair - Docker-Ruby-Rails-Postgres](https://github.com/rahathossenmanik/5.pet-fair-docker-ruby-rails-postgre)
 
-- Deployment instructions
+[Live](https://jh77qy-6543.csb.app/api)
 
-- ...
+## [Pet Fair - Next.js-React-TailwinCSS](https://github.com/rahathossenmanik/6.pet-fair-next-tailwind-app-frontend)
 
-# Docker Example
-
-In this example, we show how you can use [Docker with CodeSandbox](https://codesandbox.io/post/introducing-docker-support-in-codesandbox). Check [the Dockerfile](./.codesandbox/Dockerfile) to see how we configure the container of this sandbox. You can simply edit it yourself and the container will rebuild. Make sure to fork the sandbox first by clicking "Fork" in the top left corner.
-
-- Every new terminal will run inside this new container, open a new terminal with CTRL ~
-- We set up an example sandbox task that runs `whereis htop`. Typically this would be where you run `yarn run serve`. You can edit it in [tasks.json](./.codesandbox/tasks.json)
+[Live](https://2t35hq-3000.csb.app)
